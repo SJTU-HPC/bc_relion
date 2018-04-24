@@ -1,0 +1,12 @@
+---
+cluster: "quick"
+form:
+  - bc_account
+  - bc_num_hours
+  - bc_vnc_resolution
+attributes:
+  bc_vnc_resolution:
+    required: true
+  bc_account:
+    label: "Project"
+    help: "You can leave this blank if **not** in multiple projects."
