@@ -17,7 +17,7 @@ For VNC server support:
 
 For singularity:
 - Singularity 3.5.3+
-- A Singularity image similar to [allupaku/relion]
+- An image similar to [allupaku/relion]
 
 [allupaku/relion]: https://hub.docker.com/r/allupaku/relion/tags
 
