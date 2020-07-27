@@ -1,7 +1,7 @@
 # Disable debuginfo as it causes issues with bundled gems that build libraries
 %global debug_package %{nil}
 %global repo_name bc_relion
-%global app_name relion
+%global app_name bc_relion
 %{!?package_version: %define package_version %{major}.%{minor}.%{patch}}
 %{!?package_release: %define package_release 1}
 %{!?git_tag: %define git_tag v%{package_version}}
@@ -48,4 +48,4 @@ echo v%{version} > %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name}/VE
 
 %changelog
 * Fri Jul 10 2020 ChiFei <chifei@sjtu.edu.cn>
-* Mon Jul 27 2020 KaiyueWu <kaiyuewu@sjtu.edu.cn>
+* Mon Jul 27 2020 Kaiyue Wu <kaiyuewu@sjtu.edu.cn>
