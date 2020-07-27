@@ -2,7 +2,7 @@
 
 [![GitHub License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-A Batch Connect app designed for OSC OnDemand that launches Relion within a Pi batch job.
+A Batch Connect app designed for OSC OnDemand that launches Relion within an SJTU Pi batch job.
 
 ## Prerequisites
 
