@@ -4,5 +4,5 @@ batch_connect:
 script:
   native:
     - "-n"
-    - "<%= num_cores.blank? ? 6 : 6 * num_cores.to_i %>"
+    - "<%= num_cores.blank? ? 1 : 1 * num_cores.to_i %>"
     - "--gres=gpu:<%= num_cores.blank? ? 1 : num_cores.to_i %>"
