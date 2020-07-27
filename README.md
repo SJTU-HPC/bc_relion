@@ -19,6 +19,11 @@ For singularity:
 - Singularity 3.5.3+
 - An image similar to [allupaku/relion]
 
+For hardware rendering support:
+
+- [X server]
+- [VirtualGL] 2.3+
+
 [allupaku/relion]: https://hub.docker.com/r/allupaku/relion/tags
 
 Other software:
@@ -31,6 +36,8 @@ Other software:
 [Xfce Desktop]: https://xfce.org/
 [websockify]: https://github.com/novnc/websockify
 [Lmod]: https://www.tacc.utexas.edu/research-development/tacc-projects/lmod
+[X server]: https://www.x.org/
+[VirtualGL]: http://www.virtualgl.org/
 
 ## Install
 
