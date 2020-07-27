@@ -21,12 +21,14 @@ For singularity:
 
 [allupaku/relion]: https://hub.docker.com/r/allupaku/relion/tags
 
-**Optional** software:
+Other software:
 
 - [Lmod] 6.0.1+ or any other `module purge` and `module load <modules>` based
   CLI used to load appropriate environments within the batch job
+- [Xfce Desktop] 4+
 
 [TurboVNC]: http://www.turbovnc.org/
+[Xfce Desktop]: https://xfce.org/
 [websockify]: https://github.com/novnc/websockify
 [Lmod]: https://www.tacc.utexas.edu/research-development/tacc-projects/lmod
 
