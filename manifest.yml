@@ -4,4 +4,5 @@ category: Interactive Apps
 subcategory: GUIs
 role: batch_connect
 description: |
-
+  This app will launch Relion 3.0.8 on the SJTU Pi 2.0 cluster using a **shared
+  node**. You will be able to interact with the Relion GUI through a VNC session.
