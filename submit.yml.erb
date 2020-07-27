@@ -3,5 +3,6 @@ batch_connect:
   template: vnc
 script:
   native:
-    resources:
-      nodes: "1:ppn=1:owens"
+    - "-n"
+    - "<%= num_cores.blank? ? 6 : 6 * num_cores.to_i %>"
+    - "--gres=gpu:<%= num_cores.blank? ? 1 : num_cores.to_i %>"

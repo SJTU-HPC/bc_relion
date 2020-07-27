@@ -1,16 +1,16 @@
 # Disable debuginfo as it causes issues with bundled gems that build libraries
 %global debug_package %{nil}
-%global repo_name bc_osc_vmd
-%global app_name bc_osc_vmd
+%global repo_name relion
+%global app_name relion
 %{!?package_version: %define package_version %{major}.%{minor}.%{patch}}
 %{!?package_release: %define package_release 1}
 %{!?git_tag: %define git_tag v%{package_version}}
 %define git_tag_minus_v %(echo %{git_tag} | sed -r 's/^v//')
 
 Name:     ondemand-%{app_name}
-Version:  %{package_version}
-Release:  %{package_release}%{?dist}
-Summary:  Batch Connect - OSC VMD
+#Version:  %{package_version}
+#Release:  %{package_release}%{?dist}
+Summary:  Batch Connect - SJTU Relion
 
 Group:    System Environment/Daemons
 License:  MIT
@@ -47,6 +47,5 @@ echo v%{version} > %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name}/VE
 
 
 %changelog
-* Mon Apr 30 2018 Jeremy Nicklas <jnicklas@osc.edu> 0.1.0-1
-- new package built with tito
+* Fri Jul 10 2020 ChiFei <chifei@sjtu.edu.cn>
 

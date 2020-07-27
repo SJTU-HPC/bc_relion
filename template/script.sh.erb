@@ -9,7 +9,6 @@ cd "${HOME}"
 #
 # Launch Xfce Window Manager and Panel
 #
-
 (
   export SEND_256_COLORS_TO_REMOTE=1
   export XDG_CONFIG_HOME="<%= session.staged_root.join("config") %>"
@@ -24,15 +23,20 @@ cd "${HOME}"
 ) &
 
 #
-# Start VMD
+# Start Relion
 #
 
 # Load the required environment
-module load xalt/latest intel/16.0.3 virtualgl vmd/1.9.4
 
+module load xalt/latest <%= context.version %>
+ 
 # Output debug info
 module list
 
-# Launch VMD
+# Launch Relion
 set -x
-xfce4-terminal -e "vglrun vmd" -T "VMD Terminal" --disable-server
+
+echo y | singularity exec /lustre/share/img/relion_latest.sif relion
+#echo y | singularity exec docker://biocontainers/relion-bin-plusgui:v1.4dfsg-4-deb_cv1 relion
+#echo y | singularity exec ~/relion-bin-plusgui_v1.4dfsg-4-deb_cv1.sif relion
+#echo y | singularity exec /lustre/share/img/relion-3.0.8-cuda9.2-openmpi4.0.simg relion
