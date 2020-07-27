@@ -22,9 +22,6 @@ attributes:
     widget: "number_field"
     label: "Number of GPU"
     value: 1
-    help: |
-      Number of cores on node type (4 GB per core unless requesting whole
-      node). Leave blank if requesting full node.
     min: 1
     max: 16
     step: 1
