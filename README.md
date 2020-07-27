@@ -1,6 +1,5 @@
-# Batch Connect - OSC Relion
+# Batch Connect - Relion
 
-![GitHub Release](https://img.shields.io/github/release/osc/bc_osc_vmd.svg)
 [![GitHub License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 A Batch Connect app designed for OSC OnDemand that launches Relion within a Pi batch job.
@@ -58,7 +57,7 @@ Again, you do not need to restart the app as it isn't a Passenger app.
 
 ## Contributing
 
-1. Fork it ( https://github.com/OSC/bc_osc_vmd/fork )
+1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -66,8 +65,4 @@ Again, you do not need to restart the app as it isn't a Passenger app.
 
 ## License
 
-* Documentation, website content, and logo is licensed under
-  [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
-* Code is licensed under MIT (see LICENSE.txt)o
-* VMD and its logo are intellectual property owned by the University of Illinois, and all right, 
-title and interest, including copyright, remain with the University.
+* Code is licensed under MIT (see LICENSE)
