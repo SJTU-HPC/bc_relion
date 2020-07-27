@@ -1,6 +1,6 @@
 # Disable debuginfo as it causes issues with bundled gems that build libraries
 %global debug_package %{nil}
-%global repo_name relion
+%global repo_name bc_relion
 %global app_name relion
 %{!?package_version: %define package_version %{major}.%{minor}.%{patch}}
 %{!?package_release: %define package_release 1}
@@ -8,14 +8,14 @@
 %define git_tag_minus_v %(echo %{git_tag} | sed -r 's/^v//')
 
 Name:     ondemand-%{app_name}
-#Version:  %{package_version}
-#Release:  %{package_release}%{?dist}
+Version:  %{package_version}
+Release:  %{package_release}%{?dist}
 Summary:  Batch Connect - SJTU Relion
 
 Group:    System Environment/Daemons
 License:  MIT
-URL:      https://github.com/OSC/%{repo_name}
-Source0:  https://github.com/OSC/%{repo_name}/archive/%{git_tag}.tar.gz
+URL:      https://github.com/SJTU-HPC/%{repo_name}
+Source0:  https://github.com/SJTU-HPC/%{repo_name}/archive/%{git_tag}.tar.gz
 
 Requires: ondemand
 
@@ -24,7 +24,7 @@ Requires: ondemand
 AutoReqProv: no
 
 %description
-A Batch Connect app designed for OSC OnDemand that launches VMD within an Owens batch job.
+A Batch Connect app designed for OSC OnDemand that launches Relion within an SJTU Pi batch job.
 
 
 %prep
@@ -48,4 +48,4 @@ echo v%{version} > %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name}/VE
 
 %changelog
 * Fri Jul 10 2020 ChiFei <chifei@sjtu.edu.cn>
-
+* Mon Jul 27 2020 KaiyueWu <kaiyuewu@sjtu.edu.cn>
