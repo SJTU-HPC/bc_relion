@@ -16,6 +16,7 @@ For VNC server support:
 - [websockify] 0.8.0+
 
 For singularity:
+
 - Singularity 3.5.3+
 - An image similar to [allupaku/relion]
 
