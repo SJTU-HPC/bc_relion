@@ -20,7 +20,7 @@ For singularity:
 - Singularity 3.5.3+
 - An image similar to [allupaku/relion] 
   
-  (Remember to modify the path to the location of your own image in template/script.sh.erb.)
+  (Remember to modify the path to the location of image in template/script.sh.erb to your own setting.)
 
 For hardware rendering support:
 
