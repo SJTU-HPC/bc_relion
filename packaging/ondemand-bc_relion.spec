@@ -8,8 +8,8 @@
 %define git_tag_minus_v %(echo %{git_tag} | sed -r 's/^v//')
 
 Name:     ondemand-%{app_name}
-Version:  %{package_version}
-Release:  %{package_release}%{?dist}
+#Version:  %{package_version}
+#Release:  %{package_release}%{?dist}
 Summary:  Batch Connect - SJTU Relion
 
 Group:    System Environment/Daemons
