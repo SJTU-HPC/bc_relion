@@ -18,7 +18,8 @@ For VNC server support:
 For singularity:
 
 - Singularity 3.5.3+
-- An image similar to [allupaku/relion]
+- An image similar to [allupaku/relion] 
+  (Remember to modify the path to the location of your own image in template/script.sh.erb.)
 
 For hardware rendering support:
 
